@@ -11,19 +11,7 @@ var util = require("util"),					// Utility resources (logging, object inspection
 var socket,		// Socket controller
 	players;	// Array of connected players
 var oneball = new Ball(10,10);
-var app = require('http').createServer(handler);
-function handler (req, res) {
-  fs.readFile(__dirname + '/index.html',
-  function (err, data) {
-    if (err) {
-      res.writeHead(500);
-      return res.end('Error loading index.html');
-    }
-
-    res.writeHead(200);
-    res.end(data);
-  });
-}
+var app = require('http').createServer();
 var io = require('socket.io');
 
 
