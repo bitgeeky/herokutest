@@ -2,7 +2,6 @@
 ** NODE.JS REQUIREMENTS
 **************************************************/
 var util = require("util"),					// Utility resources (logging, object inspection, etc)
-	io = require("socket.io"),
 	Player = require("./Player").Player,	// Player class
 	Ball = require("./Ball").Ball;
 
@@ -12,6 +11,21 @@ var util = require("util"),					// Utility resources (logging, object inspection
 var socket,		// Socket controller
 	players;	// Array of connected players
 var oneball = new Ball(10,10);
+var app = require('http').createServer(handler);
+function handler (req, res) {
+  fs.readFile(__dirname + '/index.html',
+  function (err, data) {
+    if (err) {
+      res.writeHead(500);
+      return res.end('Error loading index.html');
+    }
+
+    res.writeHead(200);
+    res.end(data);
+  });
+}
+var io = require('socket.io');
+
 
 /**************************************************
 ** GAME INITIALISATION
@@ -21,7 +35,8 @@ function init() {
 	players = [];
 
 	// Set up Socket.IO to listen on port 3000
-	socket = io.listen(Number(process.env.PORT));
+	app.listen(Number(process.env.PORT));
+	socket = io.listen(app);
 	console.log(socket);
 	// Configure Socket.IO
 	socket.configure(function() {
