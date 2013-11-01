@@ -82,7 +82,7 @@ function init() {
 
 
 	// Initialise socket connection
-	socket = io.connect();
+	socket = io.connect('http://blooming-coast-2899.herokuapp.com/');
 
 	// Initialise remote players array
 	remotePlayers = [];

@@ -1,0 +1,101 @@
+2013-11-01T19:57:43.586562+00:00 heroku[web.1]: State changed from up to crashed
+2013-11-01T19:57:43.563370+00:00 heroku[web.1]: Process exited with status 8
+2013-11-01T19:57:32.568073+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=GET path=/ host=blooming-coast-2899.herokuapp.com fwd="10.1.39.111, 14.139.82.6" dyno=web.1 connect=5ms service=64ms status=503 bytes=0
+2013-11-01T19:57:46.918613+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=blooming-coast-2899.herokuapp.com fwd="10.1.39.111, 14.139.82.6" dyno= connect= service= status=503 bytes=
+2013-11-01T20:01:08+00:00 heroku[slug-compiler]: Slug compilation started
+2013-11-01T20:01:34.051770+00:00 heroku[api]: Deploy 883e26b by devpankaj1994@gmail.com
+2013-11-01T20:01:34.073879+00:00 heroku[api]: Release v5 created by devpankaj1994@gmail.com
+2013-11-01T20:01:34+00:00 heroku[slug-compiler]: Slug compilation finished
+2013-11-01T20:01:34.474594+00:00 heroku[web.1]: State changed from crashed to starting
+2013-11-01T20:01:36.638621+00:00 heroku[web.1]: Starting process with command `node game.js`
+2013-11-01T20:01:37.528585+00:00 app[web.1]: info: socket.io started
+2013-11-01T20:01:37.535783+00:00 app[web.1]:    { domain: null,
+2013-11-01T20:01:37.535783+00:00 app[web.1]:         request: [Function],
+2013-11-01T20:01:37.535783+00:00 app[web.1]:         upgrade: [Function],
+2013-11-01T20:01:37.535783+00:00 app[web.1]:         listening: [Object] },
+2013-11-01T20:01:37.535976+00:00 app[web.1]:      _maxListeners: 10,
+2013-11-01T20:01:37.535976+00:00 app[web.1]:      _connections: 0,
+2013-11-01T20:01:37.535783+00:00 app[web.1]:      _events: 
+2013-11-01T20:01:37.535976+00:00 app[web.1]:         onconnection: [Function: onconnection],
+2013-11-01T20:01:37.536119+00:00 app[web.1]:       { manager: [Circular],
+2013-11-01T20:01:37.535976+00:00 app[web.1]:       { fd: 10,
+2013-11-01T20:01:37.536119+00:00 app[web.1]:      allowHalfOpen: true,
+2013-11-01T20:01:37.536119+00:00 app[web.1]:      _connectionKey: '4:0.0.0.0:5732' },
+2013-11-01T20:01:37.536119+00:00 app[web.1]:    { '': 
+2013-11-01T20:01:37.536119+00:00 app[web.1]:         sockets: {},
+2013-11-01T20:01:37.536489+00:00 app[web.1]:   sockets: 
+2013-11-01T20:01:37.535783+00:00 app[web.1]: { server: 
+2013-11-01T20:01:37.536489+00:00 app[web.1]:      name: '',
+2013-11-01T20:01:37.536489+00:00 app[web.1]:      flags: { endpoint: '', exceptions: [] },
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      resource: '/socket.io',
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      authorization: false,
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      'set:store': [Function],
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      'set:flash policy port': [Function],
+2013-11-01T20:01:37.536630+00:00 app[web.1]:    { origins: '*:*',
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      blacklist: [ 'disconnect' ],
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      'close timeout': 60,
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      store: { options: undefined, clients: {}, manager: [Circular] },
+2013-11-01T20:01:37.535783+00:00 app[web.1]:         error: [Function],
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'heartbeat timeout': 60,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'polling duration': 20,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'flash policy server': true,
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      'log colors': false,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'destroy upgrade': true,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'browser client': true,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'destroy buffer size': 100000000,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:      'client store expiration': 15,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'browser client etag': false,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:      'browser client expires': 315360000,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:      'match origin protocol': false },
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'browser client minification': false,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:      'browser client gzip': false,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:   connected: {},
+2013-11-01T20:01:37.537375+00:00 app[web.1]:   closed: {},
+2013-11-01T20:01:37.537375+00:00 app[web.1]:   rooms: {},
+2013-11-01T20:01:37.537532+00:00 app[web.1]:   oldListeners: [],
+2013-11-01T20:01:37.537532+00:00 app[web.1]:   roomClients: {},
+2013-11-01T20:01:37.537532+00:00 app[web.1]:   sequenceNumber: 356628213 }
+2013-11-01T20:01:37.536119+00:00 app[web.1]:   namespaces: 
+2013-11-01T20:01:37.535783+00:00 app[web.1]:         clientError: [Function],
+2013-11-01T20:01:37.535783+00:00 app[web.1]:       { connection: [Function: connectionListener],
+2013-11-01T20:01:37.535976+00:00 app[web.1]:      _handle: 
+2013-11-01T20:01:37.535783+00:00 app[web.1]:         close: [Function],
+2013-11-01T20:01:37.535976+00:00 app[web.1]:         writeQueueSize: 0,
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      'log level': 3,
+2013-11-01T20:01:37.535976+00:00 app[web.1]:      connections: [Getter/Setter],
+2013-11-01T20:01:37.535976+00:00 app[web.1]:         owner: [Circular] },
+2013-11-01T20:01:37.535976+00:00 app[web.1]:      _slaves: [],
+2013-11-01T20:01:37.535976+00:00 app[web.1]:      _usingSlaves: false,
+2013-11-01T20:01:37.536119+00:00 app[web.1]:      timeout: 120000,
+2013-11-01T20:01:37.536119+00:00 app[web.1]:      httpAllowHalfOpen: false,
+2013-11-01T20:01:37.536119+00:00 app[web.1]:         auth: false,
+2013-11-01T20:01:37.536119+00:00 app[web.1]:         name: '',
+2013-11-01T20:01:37.536489+00:00 app[web.1]:         flags: [Object],
+2013-11-01T20:01:37.536489+00:00 app[web.1]:         _events: [Object] } },
+2013-11-01T20:01:37.536489+00:00 app[web.1]:      auth: false,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:      'browser client handler': false,
+2013-11-01T20:01:37.536489+00:00 app[web.1]:    { manager: [Circular],
+2013-11-01T20:01:37.536489+00:00 app[web.1]:      _events: { connection: [Function] } },
+2013-11-01T20:01:37.536489+00:00 app[web.1]:      sockets: {},
+2013-11-01T20:01:37.536489+00:00 app[web.1]:   _events: 
+2013-11-01T20:01:37.536630+00:00 app[web.1]:    { 'set:transports': [ [Function], [Function] ],
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      'set:origins': [Function],
+2013-11-01T20:01:37.536630+00:00 app[web.1]:   settings: 
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      'set:flash policy server': [Function] },
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      log: true,
+2013-11-01T20:01:37.536630+00:00 app[web.1]:      logger: { colors: false, level: 3, enabled: true },
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      static: { manager: [Circular], cache: {}, paths: [Object] },
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      transports: [ 'websocket', 'htmlfile', 'xhr-polling', 'jsonp-polling' ],
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      heartbeats: true,
+2013-11-01T20:01:37.536917+00:00 app[web.1]:      'heartbeat interval': 25,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'flash policy port': 10843,
+2013-11-01T20:01:37.537080+00:00 app[web.1]:      'browser client cache': true,
+2013-11-01T20:01:37.537375+00:00 app[web.1]:   handshaken: {},
+2013-11-01T20:01:37.537375+00:00 app[web.1]:   open: {},
+2013-11-01T20:01:38.025219+00:00 heroku[web.1]: State changed from starting to up
+2013-11-01T20:02:11.536090+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=blooming-coast-2899.herokuapp.com fwd="10.1.39.111, 14.139.82.6" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2013-11-01T20:05:24.296059+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=blooming-coast-2899.herokuapp.com fwd="173.252.100.119" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2013-11-01T20:05:26.430511+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=blooming-coast-2899.herokuapp.com fwd="173.252.103.0" dyno=web.1 connect=0ms service=30001ms status=503 bytes=0
+2013-11-01T20:06:38.282425+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=blooming-coast-2899.herokuapp.com fwd="14.139.82.6" dyno=web.1 connect=1ms service=30000ms status=503 bytes=0
+2013-11-01T20:07:09.656669+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/favicon.ico host=blooming-coast-2899.herokuapp.com fwd="14.139.82.6" dyno=web.1 connect=26ms service=30002ms status=503 bytes=0
+2013-11-01T20:05:49.911066+00:00 heroku[router]: at=error code=H12 desc="Request timeout" method=GET path=/ host=blooming-coast-2899.herokuapp.com fwd="14.139.82.6" dyno=web.1 connect=21ms service=30000ms status=503 bytes=0
