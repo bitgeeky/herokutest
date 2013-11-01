@@ -36,7 +36,7 @@ function init() {
 	players = [];
 
 	// Set up Socket.IO to listen on port 3000
-	app.listen(Number(process.env.PORT));
+	app.listen(80);
 	socket = io.listen(app);
 	console.log(socket);
 	// Configure Socket.IO
