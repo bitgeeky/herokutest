@@ -15,7 +15,7 @@ var app = require('http').createServer(handler);
 var io = require('socket.io');
 var fs = require('fs');
 function handler (req, res) {
-  fs.readFile(__dirname + '/index.html',
+  fs.readFile(__dirname + '/public/index.html',
   function (err, data) {
     if (err) {
       res.writeHead(500);
