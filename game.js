@@ -13,7 +13,7 @@ var socket,		// Socket controller
 var oneball = new Ball(10,10);
 var app = require('http').createServer(handler);
 var io = require('socket.io');
-var fs = require('fs');
+var fs = require('fs'), path = require('path');
 var http = require('http') , url = require('url');
 var mimeTypes = {
     "html": "text/html",
