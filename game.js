@@ -12,7 +12,10 @@ var socket,		// Socket controller
 	players;	// Array of connected players
 var oneball = new Ball(10,10);
 var express = require('express');
-var app = require('http').createServer(express);
+var app = express.createServer();
+app.get('/', function(req, res){
+    res.send('Hello World');
+});
 var io = require('socket.io');
 var fs = require('fs'), path = require('path');
 var http = require('http') , url = require('url');
