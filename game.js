@@ -11,7 +11,7 @@ var util = require("util"),					// Utility resources (logging, object inspection
 var socket,		// Socket controller
 	players;	// Array of connected players
 var oneball = new Ball(10,10);
-var express = require('express')();
+var express = require('express');
 var app = require('http').createServer(express);
 var io = require('socket.io');
 var fs = require('fs'), path = require('path');
