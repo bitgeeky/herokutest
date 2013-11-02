@@ -14,7 +14,7 @@ var oneball = new Ball(10,10);
 var express = require('express');
 var app = express.createServer();
 app.get('/', function(req, res){
-    res.send('Hello World');
+      res.render('index.jade', { title: 'My Site' });
 });
 var io = require('socket.io');
 var fs = require('fs'), path = require('path');
