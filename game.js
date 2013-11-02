@@ -11,35 +11,11 @@ var util = require("util"),					// Utility resources (logging, object inspection
 var socket,		// Socket controller
 	players;	// Array of connected players
 var oneball = new Ball(10,10);
-var app = require('http').createServer(handler);
+var express = require('express')();
+var app = require('http').createServer(express);
 var io = require('socket.io');
 var fs = require('fs'), path = require('path');
 var http = require('http') , url = require('url');
-var mimeTypes = {
-    "html": "text/html",
-    "jpeg": "image/jpeg",
-    "jpg": "image/jpeg",
-    "png": "image/png",
-    "js": "text/javascript",
-    "css": "text/css"};
-function handler (req, res) {
- var uri = url.parse(req.url).pathname;
-    var filename = path.join(process.cwd(), uri);
-    path.exists(filename, function(exists) {
-        if(!exists) {
-            console.log("not exists: " + filename);
-            res.writeHead(200, {'Content-Type': 'text/plain'});
-            res.write('404 Not Found\n');
-            res.end();
-        }
-        var mimeType = mimeTypes[path.extname(filename).split(".")[1]];
-        res.writeHead(200, mimeType);
-
-        var fileStream = fs.createReadStream(filename);
-        fileStream.pipe(res);
-
-    }); //end path.exists
-}
 
 
 /**************************************************
