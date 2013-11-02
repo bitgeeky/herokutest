@@ -4,6 +4,7 @@
   "dependencies": {
 	"socket.io":"0.9.16",
 	"express": "2.5.5",
+	"jade": "0.35.0",
 	"ws": "0.4.31"
   },
   "engines": {

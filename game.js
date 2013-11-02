@@ -13,9 +13,15 @@ var socket,		// Socket controller
 var oneball = new Ball(10,10);
 var express = require('express');
 var app = express.createServer();
-app.get('/', function(req, res){
-      res.render('index.jade', { title: 'My Site' });
+app.configure(function(){
+	 app.use(express.static(__dirname + '/public'));
+	app.set('views', __dirname);
+	app.set('view engine', 'jade');	
 });
+app.get('/', function (req, res) {
+  res.render('index', { layout: false });
+});
+
 var io = require('socket.io');
 var fs = require('fs'), path = require('path');
 var http = require('http') , url = require('url');
