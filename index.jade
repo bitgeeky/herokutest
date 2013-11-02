@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+html
+	head
+		<title>A multiplayer game built using HTML5 canvas and WebSockets</title>
+		<meta charset="utf-8">
+		
+		link(href="http://blooming-coast-2899.herokuapp.com/public/style/reset.css",rel="stylesheet")
+		link(href="http://blooming-coast-2899.herokuapp.com/public/style/game.css",rel="stylesheet")
+	
+	body
+		<canvas id="gameCanvas"></canvas>
+		script(src='/socket.io/socket.io.js')
+		script(src="public/js/requestAnimationFrame.js")
+		script(src="public/js/Keys.js")
+		script(src="public/js/Player.js")
+		script(src="public/js/Ball.js")
+		script(src="public/js/game.js")
+		script
+			// Initialise the game
+			init();
+			animate();
