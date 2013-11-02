@@ -12,7 +12,7 @@ var socket,		// Socket controller
 	players;	// Array of connected players
 var oneball = new Ball(10,10);
 var express = require('express');
-var app = express.createServer();
+var app = express();
 app.configure(function(){
 	 app.use(express.static(__dirname + '/public'));
 	app.set('views', __dirname);
